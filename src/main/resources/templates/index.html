@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Url Shortener</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1>URL SHORTENER</h1>
+    <input type="text" id="urlInput" placeholder="Paste your URL here..." />
+    <button onclick="encurtarUrl()">Encurtar</button>
+    <div id="resultado" class="hidden">
+        <p>URL encurtada:</p>
+        <input type="text" id="urlCurta" readonly />
+        <button onclick="copiar()">Copiar</button>
+    </div>
+    <p id="erro" class="erro"></p>
+</div>
+
+<script th:src="@{/script.js}"></script>
+</body>
+</html>
